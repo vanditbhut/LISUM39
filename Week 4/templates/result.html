@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Prediction Result</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>Prediction Result</h1>
+    <img src="{{ url_for('static', filename='blood_donation.png') }}" alt="Blood Donation" style="width:150px;height:auto;">
+    <p>{{ prediction }}</p>
+</body>
+</html>
