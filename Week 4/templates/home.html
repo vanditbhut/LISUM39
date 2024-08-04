@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Blood Donation Prediction</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>Blood Donation Prediction</h1>
+    <img src="{{ url_for('static', filename='blood_donation.png') }}" alt="Blood Donation" style="width:150px;height:auto;">
+    <form action="{{ url_for('predict') }}" method="post">
+        <label for="recency">Recency:</label>
+        <input type="text" id="recency" name="recency"><br>
+        <label for="frequency">Frequency:</label>
+        <input type="text" id="frequency" name="frequency"><br>
+        <label for="monetary">Monetary:</label>
+        <input type="text" id="monetary" name="monetary"><br>
+        <label for="time">Time:</label>
+        <input type="text" id="time" name="time"><br>
+        <input type="submit" value="Predict">
+    </form>
+</body>
+</html>
