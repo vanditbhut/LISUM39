@@ -8,7 +8,7 @@ os.chdir(os.path.dirname(os.path.abspath(__file__)))
 
 
 def load_json():
-    with open('../response.json') as json_obj:
+    with open('../response.json', 'r') as json_obj:
         response = json.load(json_obj)
     return response
 
@@ -26,7 +26,7 @@ def call_sport():
     if (sport == ""):
         sport = 'Cricket'
     if (name):
-        response[name] = sport
+        response[name] = sport.lower()
         write_json(response)
 
 
