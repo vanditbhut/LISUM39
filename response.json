@@ -1,4 +1,7 @@
 {
 "DG": "Test",
-"Data Glacier": "Cricket"
+"Data Glacier": "Cricket",
+"rachel": "mma",
+"/usr/local/bin/python3 /Users/rachelzajac/Documents/GitHub/VC/test/test.py": "mma",
+"pytest test/test.py -s": "Cricket"
 }
