@@ -26,7 +26,7 @@ def call_sport():
     if (sport == ""):
         sport = 'Cricket'
     if (name):
-        response[name] = sport
+        response[name] = sport.lower()
         write_json(response)
 
 
@@ -34,3 +34,4 @@ if __name__ == "__main__":
     call_sport()
 
 call_sport()
+
